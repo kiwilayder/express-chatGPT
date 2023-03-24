@@ -27,7 +27,6 @@ app.post("/ask", async (req, res) => {
       return res.status(200).json({
          success: true,
          message: completion,
-         s: response.data.choices,
       });
    } catch (e) {
       console.log(e.message);
